@@ -1,0 +1,9 @@
+Option Explicit
+
+Sub RunTeraTerm()
+    Dim path
+    Dim wsh As Object
+    Set wsh = VBA.CreateObject("WScript.Shell")
+    wsh.Run ActiveWorkbook.path & "\" & ActiveSheet.Name & ".ttl"
+
+End Sub
